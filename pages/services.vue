@@ -1,8 +1,11 @@
 <script setup lang="ts">
+  import BannerService from '../components/services/BannerService.vue'
+  import SectionService from '../components/services/SectionService.vue'
 useHead({
   title: 'Services'
 })
 </script>
 <template>
-    <h1>Services Pages</h1>
+    <BannerService/>
+    <SectionService/>
 </template>
