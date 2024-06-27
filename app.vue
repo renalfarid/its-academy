@@ -1,6 +1,17 @@
+<script setup lang="ts">
+const route = useRoute()
+
+useHead({
+  // as a string,
+  // where `%s` is replaced with the title
+  titleTemplate: 'ITS Academy - %s',
+  meta: [{ property: 'og:title', content: `Raih Karir Impian bersama ITS Academy` }]
+
+})
+</script>
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+    
 </template>
