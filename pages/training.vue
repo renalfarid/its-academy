@@ -1,5 +1,6 @@
 <script setup>
+  import SectionCourse from '../components/program/SectionCourse.vue'
 </script>
 <template>
-  <h1>Training Page</h1>
+  <SectionCourse />
 </template>
