@@ -2,5 +2,14 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   spaLoadingTemplate: false,
-  modules: ["@nuxtjs/tailwindcss"]
+  modules: ["@nuxtjs/tailwindcss"],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
+  plugins: [
+    { src: "~/plugins/fontawesome.js", ssr: false} 
+  ],
+  build: {
+    transpile: ['@fortawesome/vue-fontawesome']
+  },
 })
