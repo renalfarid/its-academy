@@ -4,5 +4,8 @@ useHead({
 })
 </script>
 <template>
-    <h1>Home Page</h1>
+    <Banner />
+    <Statistic />
+    <SectionPath />
+    <CustomerReview />
 </template>
