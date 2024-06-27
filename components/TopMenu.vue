@@ -1,3 +1,12 @@
+<script setup>
+import { ref } from 'vue';
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+</script>
 <template>
     <header class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -46,7 +55,7 @@
             </div>
     
             <div class="block md:hidden">
-              <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <button @click="toggleMenu" class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -62,5 +71,30 @@
           </div>
         </div>
       </div>
+      <div v-if="isMenuOpen" class="md:hidden">
+      <nav aria-label="Global">
+        <ul class="flex flex-col items-center gap-6 text-sm">
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="/">Home</a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="/services">Services</a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="/training">Program</a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="/corporate">Corporate Training</a>
+          </li>
+
+          <li>
+            <a class="text-gray-500 transition hover:text-gray-500/75" href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     </header>
   </template>
