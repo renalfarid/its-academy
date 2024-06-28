@@ -5,8 +5,7 @@
           <h2 class="text-3xl font-bold sm:text-4xl">Program Training</h2>
     
           <p class="mt-4">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur aliquam doloribus
-            nesciunt eos fugiat. Vitae aperiam fugit consequuntur saepe laborum.
+            Program Training kami, yang dirancang untuk meningkatkan keterampilan dan pengetahuan Anda di berbagai bidang teknologi. Kami menawarkan berbagai pelatihan yang mendalam dan komprehensif, masing-masing difokuskan pada kebutuhan industri saat ini. 
           </p>
         </div>
     
@@ -22,8 +21,7 @@
             <h2 class="mt-4 text-xl font-bold">Training Backend</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Pelatihan ini mencakup pemrograman dengan bahasa seperti Golang, PHP, atau Node.js serta memahami basis data, autentikasi, dan pengelolaan API. Dapatkan keahlian untuk menciptakan aplikasi web yang kuat dan scalable.
             </p>
           </a>
     
@@ -38,8 +36,7 @@
             <h2 class="mt-4 text-xl font-bold">Training Frontend</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Pelatihan ini mencakup HTML, CSS, dan JavaScript, serta framework populer seperti Vue atau Nuxt. Anda akan belajar bagaimana membuat antarmuka pengguna yang responsif dan interaktif.
             </p>
           </a>
     
@@ -54,8 +51,7 @@
             <h2 class="mt-4 text-xl font-bold">Training Devops</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Pelatihan ini mengajarkan bagaimana mengintegrasikan dan mengotomatiskan proses pengembangan dan operasi. Anda akan belajar tentang Continuous Integration, Continuous Deployment, serta tools seperti Docker, Kubernetes.
             </p>
           </a>
     
@@ -70,8 +66,7 @@
             <h2 class="mt-4 text-xl font-bold">Training Fullstack</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Menjadi developer serba bisa dengan memahami kedua sisi pengembangan web, baik frontend maupun backend. Pelatihan ini mencakup pengetahuan menyeluruh dari HTML, CSS, JavaScript, hingga basis data dan server-side programming, memungkinkan Anda untuk membangun aplikasi web lengkap dari awal hingga akhir.
             </p>
           </a>
     
@@ -86,8 +81,7 @@
             <h2 class="mt-4 text-xl font-bold">Training Network</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Mempelajari dasar-dasar jaringan komputer, konfigurasi perangkat jaringan, dan keamanan jaringan. Pelatihan ini mencakup pemahaman tentang protokol jaringan, perancangan topologi jaringan, serta troubleshooting jaringan untuk memastikan kelancaran komunikasi data.
             </p>
           </a>
     
@@ -102,18 +96,17 @@
             <h2 class="mt-4 text-xl font-bold">Training IoT</h2>
     
             <p class="mt-1 text-sm text-gray-800">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo possimus adipisci
-              distinctio alias voluptatum blanditiis laudantium.
+                Memahami teknologi Internet of Things (IoT) dan bagaimana menghubungkan perangkat ke internet. Pelatihan ini mencakup pemrograman sensor dan aktuator, pengumpulan dan analisis data, serta pengelolaan perangkat IoT.
             </p>
           </a>
         </div>
     
         <div class="mt-12 text-center">
           <a
-            href="#"
+            href="/training/registration"
             class="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
           >
-            Get Started Today
+            Daftar disini
           </a>
         </div>
       </div>
