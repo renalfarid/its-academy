@@ -10,6 +10,19 @@
           </p>
         </div>
     </div>
+    <div class="mt-4 mb-6 w-full border px-3 py-2 focus:border-gray-200 focus:outline-none focus:ring-0 sm:text-sm">
+      <select
+        name="SelectTraining"
+        id="SelectTraining"
+        required
+        class="mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+      >
+        <option value="">Pilih Training</option>
+        <option value="BE">Backend Training</option>
+        <option value="FE">Frontend Training</option>
+        <option value="DO">Devops Training</option>
+      </select>
+    </div>
     <label
       for="FullName"
       class="block overflow-hidden rounded-md border border-gray-200 px-3 py-2 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
@@ -54,21 +67,6 @@
       />
     </label>
 
-    <div class="mt-4 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm">
-      <label for="SelectTraining" class="block text-sm font-medium text-gray-900"> Pilihan training </label>
-  
-      <select
-        name="SelectTraining"
-        id="SelectTraining"
-        required
-        class="mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
-      >
-        <option value="">Please select</option>
-        <option value="BE">Backend Training</option>
-        <option value="FE">Frontend Training</option>
-        <option value="DO">Devops Training</option>
-      </select>
-    </div>
     <div class="mt-8 col-span-6 sm:flex sm:items-center sm:gap-4">
               <button
                 class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
