@@ -11,7 +11,7 @@
             </p>
     
             <a
-              href="#"
+              href="/training"
               class="mt-8 inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Mulai Aja Dulu
