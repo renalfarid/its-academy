@@ -1,4 +1,51 @@
 <script setup>
+ import { ref } from 'vue'
+import { useFetch } from '#imports'
+
+const router = useRouter()
+
+const selectTraining = ref('');
+const fullName = ref('');
+const userEmail = ref('');
+const noWa = ref('');
+const isLoading = ref(false);
+
+
+const submitForm = async () => {
+  isLoading.value = true;
+  const data = {
+    selectTraining: selectTraining.value,
+    fullName: fullName.value,
+    userEmail: userEmail.value,
+    noWa: noWa.value
+  };
+
+  try {
+    const { data: response, error } = await useFetch('/api/sheet', {
+      method: 'POST',
+      body: data,
+    });
+
+    if (error.value) {
+      alert('Failed to submit data.');
+      console.error(error.value);
+    } else {
+      //alert('Data has been successfully submitted!');
+      router.push('/training')
+      // Clear the form after submission
+      selectTraining.value = '';
+      fullName.value = '';
+      userEmail.value = '';
+      noWa.value = '';
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('Failed to submit data.');
+  } finally {
+    isLoading.value = false;
+  }
+}
+
 </script>
 <template>
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -12,6 +59,7 @@
     </div>
     <div class="mt-4 mb-6 w-full border px-3 py-2 focus:border-gray-200 focus:outline-none focus:ring-0 sm:text-sm">
       <select
+        v-model="selectTraining"
         name="SelectTraining"
         id="SelectTraining"
         required
@@ -33,6 +81,7 @@
       <input
         type="text"
         id="FullName"
+        v-model="fullName"
         placeholder="John Doe"
         required
         class="mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
@@ -47,6 +96,7 @@
       <input
         type="email"
         id="UserEmail"
+        v-model="userEmail"
         placeholder="anthony@rhcp.com"
         required
         class="mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
@@ -61,6 +111,7 @@
       <input
         type="text"
         id="NoWa"
+        v-model="noWa"
         placeholder="081123456"
         aria-required="true"
         class="mt-1 w-full border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
@@ -68,10 +119,17 @@
     </label>
 
     <div class="mt-8 col-span-6 sm:flex sm:items-center sm:gap-4">
-              <button
-                class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
-              >
-                Kirim
-              </button>
+      <button
+        @click="submitForm"
+        class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
+      >
+      <span v-if="isLoading" class="animate-spin">
+        <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+          <!-- ... -->
+        </svg>
+        Processing...
+      </span>
+      <span v-else>Kirim</span>
+      </button>
     </div>
   </template>
