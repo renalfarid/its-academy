@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'About'
+  title: 'About ITS Academy'
 })
 </script>
 <template>

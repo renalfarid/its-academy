@@ -1,8 +1,17 @@
+<script setup>
+  import { ref } from 'vue'
+
+  const announcement = ref({
+    'title': 'Pelatihan Web Programming ?',
+    'content': 'Daftar disini',
+    'url': '/training/registration'
+  })
+</script>
 <template>
     <div class="bg-red-400 mt-5 px-4 py-3 text-white">
       <p class="text-center text-sm font-medium">
-        Pelatihan Web Programming ?
-        <a href="#" class="inline-block underline">Lebih lanjut tentang pelatihan ini!</a>
+        {{ announcement.title }}
+        <a :href="announcement.url" class="inline-block underline">{{ announcement.content }}</a>
       </p>
     </div>
   </template>

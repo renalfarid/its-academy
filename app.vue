@@ -2,7 +2,7 @@
 useHead({
   // as a string,
   // where `%s` is replaced with the title
-  titleTemplate: 'ITS Academy - %s',
+  titleTemplate: '%s',
   meta: [
     { property: 'og:title', content: `Raih Karir Impian bersama ITS Academy` },
     { property: 'og:description', content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
