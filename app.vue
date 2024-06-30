@@ -9,7 +9,7 @@ useHead({
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://its-academy.com' },
     { property: 'og:locale', content: 'id_ID' },
-    { property: 'og:image', content: 'https://its-academy/its-logo.png' },
+    { property: 'og:image', content: 'https://its-academy.vercel.app/img/computer-class.png' },
   ]
 
 })
