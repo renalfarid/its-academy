@@ -21,23 +21,18 @@ const submitForm = async () => {
   };
 
   try {
-    const { data: response, error } = await useFetch('/api/sheet', {
+    const { data: response, error } = await $fetch('/api/sheet', {
       method: 'POST',
       body: data,
     });
 
-    if (error.value) {
-      alert('Failed to submit data.');
-      console.error(error.value);
-    } else {
-      //alert('Data has been successfully submitted!');
-      router.push('/training')
+    router.push('/training')
       // Clear the form after submission
       selectTraining.value = '';
       fullName.value = '';
       userEmail.value = '';
       noWa.value = '';
-    }
+    
   } catch (error) {
     console.error('Error submitting form:', error);
     alert('Failed to submit data.');
