@@ -24,11 +24,9 @@ export default defineEventHandler(async (event) => {
     GOOGLE_PRIVATE_KEY,
     ['https://www.googleapis.com/auth/spreadsheets']
   );
-  console.log('auth key: ', auth)
-
+  
   const sheets = google.sheets({ version: 'v4', auth });
-  console.log('sheets: ', sheets)
-
+  
   const range = 'Sheet1!A2:D2'; // Adjust this range as necessary
   const resource = {
     values: [[selectTraining, fullName, userEmail, noWa]],

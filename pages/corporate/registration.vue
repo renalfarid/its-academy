@@ -1,6 +1,6 @@
 <script setup>
-  import RegistrationForm from '../components/corporate/RegistrationForm.vue'
+  import RegistrationProgram from '../../components/program/RegistrationProgram.vue'
 </script>
 <template>
-    <RegistrationForm />
+    <RegistrationProgram />
 </template>
