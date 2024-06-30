@@ -1,6 +1,6 @@
 <script setup>
  import { ref } from 'vue'
-import { useFetch } from '#imports'
+ import AlertSuccess from '../../components/Alert.vue'
 
 const router = useRouter()
 
@@ -9,6 +9,7 @@ const fullName = ref('');
 const userEmail = ref('');
 const noWa = ref('');
 const isLoading = ref(false);
+const isSuccess = ref(false)
 
 
 const submitForm = async () => {
@@ -26,6 +27,7 @@ const submitForm = async () => {
       body: data,
     });
 
+    isSuccess.value = true
     router.push('/training')
       // Clear the form after submission
       selectTraining.value = '';
@@ -43,6 +45,10 @@ const submitForm = async () => {
 
 </script>
 <template>
+    <div v-if="isSuccess">
+      <AlertSuccess />
+    </div>
+    
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div class="mx-auto max-w-lg text-center">
           <h2 class="text-3xl font-bold sm:text-4xl">Program Training</h2>
