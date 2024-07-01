@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const year = 31536000
 export default defineNuxtConfig({
   app: {
     head: {
@@ -13,6 +14,16 @@ export default defineNuxtConfig({
       GOOGLE_CLIENT_EMAIL: process.env.NUXT_PUBLIC_GOOGLE_CLIENT_EMAIL,
       GOOGLE_PRIVATE_KEY: process.env.NUXT_PUBLIC_GOOGLE_PRIVATE_KEY
     }
+  },
+  routeRules: {
+    '/': { prerender: true },
+    '/services/**': { isr: true },
+    '/about/**': { isr: true },
+    '/corporate/**': { isr: true },
+    '/api/**': { cors: true },
+    "/img/**": { headers: { 'cache-control': `public,max-age=${year},s-maxage=${year}` } },
+    "/_nuxt/**": { headers: { 'cache-control': `public,max-age=${year},s-maxage=${year}` } },
+    
   },
   devtools: { enabled: false },
   spaLoadingTemplate: false,
