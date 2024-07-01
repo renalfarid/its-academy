@@ -10,8 +10,8 @@
         <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
     </div>
     <div class="grid grid-cols-2 gap-4 mt-8">
-        <img class="w-full rounded-lg" src="/img/digital-team.png" alt="office content 1">
-        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/img/digital-team.jpg" alt="office content 2">
+        <img class="w-full rounded-lg" src="/img/digital-team-1.webp" alt="office content 1">
+        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/img/digital-team-2.webp" alt="office content 2">
     </div>
   </div>
 </section>

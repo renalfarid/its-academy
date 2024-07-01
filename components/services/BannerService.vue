@@ -6,7 +6,7 @@
             <div class="relative h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="/img/banner-service.jpg"
+                src="/img/banner-service.webp"
                 class="absolute inset-0 h-full w-full object-cover"
               />
             </div>
