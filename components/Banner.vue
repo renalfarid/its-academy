@@ -32,7 +32,7 @@
     
       <img
         alt=""
-        src="/img/front-banner.jpeg"
+        src="/img/front-banner.webp"
         class="h-56 w-full object-cover sm:h-full"
       />
     </section>

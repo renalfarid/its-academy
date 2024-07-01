@@ -6,19 +6,19 @@
       'nama': 'Nusair',
       'review': 'Kami telah bekerja sama dengan ITS sejak tahun 2011, mulai dari pekerjaan Software Development, CCTV, Palang parkir, raised floor, jaringan LAN, fiber optik dan kebutuhan Teknologi Informasi usaha kami, didukung dengan pengalaman  dan sumber daya menjadi partner terpercaya',
       'perusahaan': 'PT. Pelindo',
-      'img': '/img/pelindo.jpeg'
+      'img': '/img/pelindo.webp'
     },
     {
       'nama': 'Masrah Marang',
       'review': 'Saya menyambut gembira atas pencapaian perkembangan usaha ITS, kami telah bekerja sama dalam beberapa project di Makassar dan Bandung dalam memenuhi kebutuhan Teknologi Informasi usaha kami.  Sukses terus berkembang menjadi yang terbaik',
       'perusahaan': 'PT Marlip Indonesia',
-      'img': '/img/marlip.jpeg'
+      'img': '/img/marlip.webp'
     },
     {
       'nama': 'Hakmal Candra',
       'review': 'Kami telah bekerja sama dengan ITS untuk memenuhi kebutuhan Palang parkir kami dibeberapa cabang PT Semen Tonasa dibawah Group PT Semen Indonesia, lokasi pemasangan di Balikpapan, Samarinda, Pontianak dan Banjarmasin. Hasilnya sangat memuaskan, dan Profesional. Sukses selalu ITS.',
       'perusahaan': 'PT Semen Tonasa',
-      'img': '/img/tonasa.png'
+      'img': '/img/tonasa.webp'
     }
   ])
 </script>
