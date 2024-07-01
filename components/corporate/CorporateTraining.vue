@@ -1,3 +1,39 @@
+<script setup>
+  import { ref } from 'vue'
+
+  const training = ref([
+    {
+      'nama': 'Backend Training',
+      'deskripsi': 'Pelajari cara membangun dan memelihara server yang efisien dan aman. Program ini mencakup teknik pengembangan backend modern, penggunaan database, dan integrasi API.',
+      'icon': 'laptop-code'
+    },
+    {
+      'nama': 'Frontend Training',
+      'deskripsi': 'Tingkatkan keterampilan Anda dalam menciptakan antarmuka pengguna yang menarik dan responsif. Pelatihan ini mencakup teknologi terbaru seperti HTML, CSS, JavaScript, dan framework populer lainnya.',
+      'icon': 'window-restore'
+    },
+    {
+      'nama': 'UI/UX Design',
+      'deskripsi': 'Program ini mengajarkan prinsip desain, alat desain terkini, dan metode untuk memahami kebutuhan pengguna agar dapat menghasilkan produk yang user-friendly.',
+      'icon': 'code-branch'
+    },
+    {
+      'nama': 'Cloud Computing',
+      'deskripsi': 'Siapkan diri Anda untuk masa depan dengan memahami teknologi cloud. Program ini mencakup konsep dasar hingga lanjutan dari cloud computing, penyedia layanan cloud utama, dan cara mengelola serta mengoptimalkan sumber daya cloud untuk efisiensi dan skalabilitas.',
+      'icon': 'cubes'
+    },
+    {
+      'nama': 'Fullstack Programming',
+      'deskripsi': 'Menjadi pengembang serba bisa dengan kemampuan fullstack. Pelatihan ini mengajarkan Anda untuk bekerja di frontend dan backend, memahami database, dan mengintegrasikan semuanya menjadi aplikasi web yang berfungsi penuh.',
+      'icon': 'cubes'
+    },
+    {
+      'nama': 'Data Engineer',
+      'deskripsi': 'Pelajari cara mengumpulkan, menyimpan, dan memproses data dalam skala besar. Program ini mencakup teknik ETL, manajemen data, dan alat-alat analitik untuk membantu Anda mengubah data mentah menjadi wawasan yang berguna.',
+      'icon': 'microchip'
+    },
+  ])
+</script>
 <template>
     <section class="bg-white text-black">
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -11,182 +47,19 @@
     
         <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a
+            v-for="item in training" 
+            :key="item.nama"
             class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="#"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
+            <span style="font-size: 1em; color: Magenta;">
+                <font-awesome-icon :icon="item.icon" />
+            </span>
     
-            <h2 class="mt-4 text-xl font-bold">Backend Training</h2>
+            <h2 class="mt-4 text-xl font-bold">{{ item.nama }}</h2>
     
-            <p class="mt-1 text-sm">
-                Pelajari cara membangun dan memelihara server yang efisien dan aman. Program ini mencakup teknik pengembangan backend modern, penggunaan database, dan integrasi API.
-            </p>
-          </a>
-    
-          <a
-            class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-    
-            <h2 class="mt-4 text-xl font-bold">Frontend Training</h2>
-    
-            <p class="mt-1 text-sm">
-                Tingkatkan keterampilan Anda dalam menciptakan antarmuka pengguna yang menarik dan responsif. Pelatihan ini mencakup teknologi terbaru seperti HTML, CSS, JavaScript, dan framework populer lainnya.
-            </p>
-          </a>
-    
-          <a
-            class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-    
-            <h2 class="mt-4 text-xl font-bold">UI/UX Design</h2>
-    
-            <p class="mt-1 text-sm">
-                Program ini mengajarkan prinsip desain, alat desain terkini, dan metode untuk memahami kebutuhan pengguna agar dapat menghasilkan produk yang user-friendly.
-            </p>
-          </a>
-    
-          <a
-            class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-    
-            <h2 class="mt-4 text-xl font-bold">Cloud Computing</h2>
-    
-            <p class="mt-1 text-sm">
-                Siapkan diri Anda untuk masa depan dengan memahami teknologi cloud. Program ini mencakup konsep dasar hingga lanjutan dari cloud computing, penyedia layanan cloud utama, dan cara mengelola serta mengoptimalkan sumber daya cloud untuk efisiensi dan skalabilitas.
-            </p>
-          </a>
-    
-          <a
-            class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-    
-            <h2 class="mt-4 text-xl font-bold">Fullstack Programming</h2>
-    
-            <p class="mt-1 text-sm">
-                Menjadi pengembang serba bisa dengan kemampuan fullstack. Pelatihan ini mengajarkan Anda untuk bekerja di frontend dan backend, memahami database, dan mengintegrasikan semuanya menjadi aplikasi web yang berfungsi penuh.
-            </p>
-          </a>
-    
-          <a
-            class="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-pink-500"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M12 14l9-5-9-5-9 5 9 5z" />
-              <path
-                d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-              />
-            </svg>
-    
-            <h2 class="mt-4 text-xl font-bold">Data Engineer</h2>
-    
-            <p class="mt-1 text-sm">
-                Pelajari cara mengumpulkan, menyimpan, dan memproses data dalam skala besar. Program ini mencakup teknik ETL, manajemen data, dan alat-alat analitik untuk membantu Anda mengubah data mentah menjadi wawasan yang berguna.
+            <p class="mt-1 text-sm text-gray-800">
+                {{ item.deskripsi }}
             </p>
           </a>
         </div>
