@@ -122,6 +122,7 @@ const submitForm = async () => {
     <div class="mt-8 col-span-6 sm:flex sm:items-center sm:gap-4">
       <button
         @click="submitForm"
+        :disabled="isLoading"
         class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
       >
       <span v-if="isLoading" class="animate-spin">
