@@ -8,13 +8,13 @@ export default defineNuxtConfig({
       ]
     }
   },
-  runtimeConfig: {
+  /*runtimeConfig: {
     public: {
       SPREAD_SHEET_ID: process.env.NUXT_PUBLIC_SPREAD_SHEET_ID,
       GOOGLE_CLIENT_EMAIL: process.env.NUXT_PUBLIC_GOOGLE_CLIENT_EMAIL,
       GOOGLE_PRIVATE_KEY: process.env.NUXT_PUBLIC_GOOGLE_PRIVATE_KEY
     }
-  },
+  },*/
   routeRules: {
     '/': { prerender: true },
     '/services/**': { isr: true },
