@@ -5,7 +5,7 @@
           <div class="relative z-10 lg:py-16">
             <div class="relative h-64 sm:h-80 lg:h-full">
               <img
-                alt=""
+                alt="services"
                 src="/img/banner-service.webp"
                 class="absolute inset-0 h-full w-full object-cover"
               />
