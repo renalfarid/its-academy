@@ -14,7 +14,7 @@ const toggleMenu = () => {
           <div class="md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="/">
               <span class="sr-only">Home</span>
-              <img src="/img/logo-its.webp" width="80" height="80"/>
+              <img src="/img/logo-its.webp" alt="its logo" width="80" height="80"/>
             </a>
           </div>
     
