@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: false },
   spaLoadingTemplate: false,
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/robots'],
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
