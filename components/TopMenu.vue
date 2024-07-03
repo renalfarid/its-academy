@@ -11,13 +11,13 @@ const toggleMenu = () => {
     <header class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
-          <div class="md:flex md:items-center md:gap-12">
+          <div class="mt-3 md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="/">
-              <span class="sr-only">Home</span>
               <img src="/img/logo-its.webp" alt="its logo" width="80" height="80"/>
+              <span class="text-small text-red-500 font-bold">ITS Consulting & Academy</span>
             </a>
           </div>
-    
+          
           <div class="hidden md:block">
             <nav aria-label="Global">
               <ul class="flex items-center gap-6 text-sm">
@@ -71,7 +71,7 @@ const toggleMenu = () => {
           </div>
         </div>
       </div>
-      <div v-if="isMenuOpen" class="md:hidden">
+      <div v-if="isMenuOpen" class="md:hidden mt-5">
       <nav aria-label="Global">
         <ul class="flex flex-col items-center gap-6 text-sm">
           <li>
