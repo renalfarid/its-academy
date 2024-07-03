@@ -27,6 +27,7 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # npm
 npm run dev
+test development build
 
 # pnpm
 pnpm run dev
