@@ -7,16 +7,16 @@ useHead({
   // where `%s` is replaced with the title
   titleTemplate: '%s',
   meta: [
-    { property: 'og:title', content: `Raih Karir Impian bersama ITS Academy` },
+    { property: 'og:title', content: `Raih Karir Impian bersama Sqile Academy` },
     { property: 'og:site_name', content: `https://www.sqile.com` },
-    { property: 'og:description', content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
+    { property: 'og:description', content: 'Sqile Academy - hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://www.sqile.com' },
     { property: 'og:locale', content: 'id_ID' },
     { property: 'og:image', content: 'https://www.sqile.com/img/computer-class.png' },
-    { property: 'twitter:title', content: `Raih Karir Impian bersama ITS Academy` },
+    { property: 'twitter:title', content: `Raih Karir Impian bersama Sqile Academy` },
     { property: 'twitter:card', content: `summary_large_image` },
-    { property: 'twitter:description', content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
+    { property: 'twitter:description', content: 'Sqile Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
     { property: 'twitter:image', content: 'https://www.sqile.com/img/computer-class.png' },
 
   ]
