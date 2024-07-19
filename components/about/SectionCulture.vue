@@ -4,7 +4,7 @@
         <div class="text-center">
           <h2 class="text-3xl font-semibold tracking-wide uppercase text-gray-800">Our values</h2>
           <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Nilai-nilai ini adalah fondasi yang memungkinkan ITS Academy untuk menciptakan lingkungan yang mendukung kemajuan dan inovasi.
+            Nilai-nilai ini adalah fondasi yang memungkinkan Sqile Academy untuk menciptakan lingkungan yang mendukung kemajuan dan inovasi.
           </p>
         </div>
         <div class="mt-10">
@@ -32,7 +32,7 @@
                 <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Always learning</p>
               </dt>
               <dd class="mt-2 ml-16 text-base text-gray-500">
-                Dengan tetap terbuka terhadap pembelajaran baru, kita dapat terus beradaptasi dan berkembang dalam karier kita. Di ITS Academy, kami menyediakan berbagai sumber daya dan kesempatan untuk mendukung pembelajaran berkelanjutan bagi semua anggota komunitas kami.
+                Dengan tetap terbuka terhadap pembelajaran baru, kita dapat terus beradaptasi dan berkembang dalam karier kita. Di Sqile Academy, kami menyediakan berbagai sumber daya dan kesempatan untuk mendukung pembelajaran berkelanjutan bagi semua anggota komunitas kami.
               </dd>
             </div>
           </dl>

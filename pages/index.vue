@@ -1,10 +1,10 @@
 <script setup lang="ts">
 useHead({
-    title: 'ITS Academy - Langkah menuju karir digital impian',
+    title: 'Sqile Academy - Langkah menuju karir digital impian',
     meta: [
       {
         name: 'description',
-        content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan tersebut melalui program-program pelatihan yang komprehensif dan praktis.' 
+        content: 'Sqile Academy hadir untuk membantu Anda mengasah keterampilan tersebut melalui program-program pelatihan yang komprehensif dan praktis.' 
       },
     ],
   });
