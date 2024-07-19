@@ -8,16 +8,16 @@ useHead({
   titleTemplate: '%s',
   meta: [
     { property: 'og:title', content: `Raih Karir Impian bersama ITS Academy` },
-    { property: 'og:site_name', content: `https://its-academy.vercel.app` },
+    { property: 'og:site_name', content: `https://www.sqile.com` },
     { property: 'og:description', content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://its-academy.vercel.app' },
+    { property: 'og:url', content: 'https://www.sqile.com' },
     { property: 'og:locale', content: 'id_ID' },
-    { property: 'og:image', content: 'https://its-academy.vercel.app/img/computer-class.png' },
+    { property: 'og:image', content: 'https://www.sqile.com/img/computer-class.png' },
     { property: 'twitter:title', content: `Raih Karir Impian bersama ITS Academy` },
     { property: 'twitter:card', content: `summary_large_image` },
     { property: 'twitter:description', content: 'ITS Academy hadir untuk membantu Anda mengasah keterampilan IT melalui program-program pelatihan yang komprehensif dan praktis.' },
-    { property: 'twitter:image', content: 'https://its-academy.vercel.app/img/computer-class.png' },
+    { property: 'twitter:image', content: 'https://www.sqile.com/img/computer-class.png' },
 
   ]
 
