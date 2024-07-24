@@ -22,7 +22,7 @@
           <div class="mt-4 md:mt-8">
             <a
               href="/training"
-              class="inline-block rounded bg-red-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-red-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              class="inline-block rounded bg-emerald-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
             >
               Mulai Aja Dulu
             </a>

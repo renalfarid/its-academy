@@ -28,7 +28,7 @@
     
               <a
                 href="#"
-                class="mt-8 inline-block rounded border border-red-600 bg-red-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-red-600 focus:outline-none focus:ring active:text-red-500"
+                class="mt-8 inline-block rounded border border-emerald-600 bg-emerald-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-emerald-600 focus:outline-none focus:ring active:text-emerald-500"
               >
                 Konsultasi Gratis
               </a>

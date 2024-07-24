@@ -8,7 +8,7 @@
   })
 </script>
 <template>
-    <div class="bg-red-400 mt-5 px-4 py-3 text-white">
+    <div class="bg-lime-600 mt-5 px-4 py-3 text-white">
       <p class="text-center text-sm font-medium">
         {{ announcement.title }}
         <a :href="announcement.url" class="inline-block underline">{{ announcement.content }}</a>
