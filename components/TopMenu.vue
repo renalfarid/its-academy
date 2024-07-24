@@ -13,8 +13,7 @@ const toggleMenu = () => {
         <div class="flex h-16 items-center justify-between">
           <div class="mt-3 md:flex md:items-center md:gap-12">
             <a class="block text-teal-600" href="/">
-              <img src="/img/logo-its.webp" alt="its logo" width="80" height="80"/>
-              <span class="text-small text-red-500 font-bold">ITS Consulting & Academy</span>
+              <img src="/img/sqile.webp" alt="its logo" width="150" height="150"/>
             </a>
           </div>
           
