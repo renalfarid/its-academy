@@ -29,6 +29,8 @@ export default defineEventHandler(async (event) => {
   );
   
   const sheets = google.sheets({ version: 'v4', auth });
+
+  console.log("sheets: ", sheets)
   
   const range = 'Sheet1!A2:D2'; // Adjust this range as necessary
   const resource = {
