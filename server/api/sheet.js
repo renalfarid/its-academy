@@ -48,6 +48,7 @@ export default defineEventHandler(async (event) => {
   } catch (error) {
     console.error('Error writing to Google Sheet:', error);
     event.node.res.statusCode = 500;
+    console.error('Error writing to Google Sheet:', error.response ? error.response.data : error);
     return { status: 500, message: 'Unable to write data to Google Sheet' };
   }
 });
