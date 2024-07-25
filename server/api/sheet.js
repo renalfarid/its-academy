@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
 
   //const config = useRuntimeConfig().public;
   //const { SPREAD_SHEET_ID, GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY } = config;
-  const SPREAD_SHEET_ID = process.env.SPREAD_SHEET_ID
+  const SPREAD_SHEET_ID = process.env.SQILE_SPREADSHEET_ID
   const GOOGLE_CLIENT_EMAIL = process.env.GOOGLE_CLIENT_EMAIL
   const GOOGLE_PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY
 
