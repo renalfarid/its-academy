@@ -99,8 +99,8 @@
               </dl>
 
               <button class="mt-4 w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600">
-              Beli
-            </button>
+                Detail Kursus
+              </button>
             </a>
           </li>
     

@@ -90,6 +90,10 @@
                   <dd class="font-semibold text-sm text-red-500">Rp. {{ item.price }}</dd>
                 </div>
               </dl>
+
+              <button class="mt-4 w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600">
+                Detail Kursus
+              </button>
             </a>
           </li>
     
