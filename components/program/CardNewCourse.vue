@@ -49,13 +49,13 @@
       <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
         <header class="flex justify-between items-center">
           <h2 class="text-xl font-semibold text-gray-900 sm:text-xl">Kursus Terbaru</h2>
-          <a href="/#" class="text-blue-500 hover:text-blue-700">Lihat semua</a>
+          <a href="/course" class="text-blue-500 hover:text-blue-700">Lihat semua</a>
         </header>
     
         <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           
           <li v-for="item in newCourse">
-            <a href="#" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
+            <a :href="`/course/${item.id}`" class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8">
               <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
   
               <div class="sm:flex sm:justify-between sm:gap-4">
@@ -98,9 +98,9 @@
                 </div>
               </dl>
 
-              <button class="mt-4 w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600">
+              <NuxtLink :to="`/course/${item.id}`" class="mt-4 w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 text-center block">
                 Detail Kursus
-              </button>
+              </NuxtLink>
             </a>
           </li>
     
