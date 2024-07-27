@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CardCourse from "../components/program/CardCourse.vue"
+import CardNewCourse from "../components/program/CardNewCourse.vue"
 useHead({
     title: 'Sqile Academy - Langkah menuju karir digital impian',
     meta: [
@@ -11,6 +13,8 @@ useHead({
 </script>
 <template>
     <Banner />
+    <CardCourse />
+    <CardNewCourse />
     <Statistic />
     <SectionPath />
     <CustomerReview />
