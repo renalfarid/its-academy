@@ -13,8 +13,8 @@ useHead({
 </script>
 <template>
     <Banner />
-    <CardCourse />
     <CardNewCourse />
+    <CardCourse />
     <Statistic />
     <SectionPath />
     <CustomerReview />

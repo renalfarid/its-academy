@@ -91,9 +91,6 @@
                 </div>
               </dl>
 
-              <NuxtLink :to="`/course/${item.id}`" class="mt-4 w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 text-center block">
-                Detail Kursus
-              </NuxtLink>
             </a>
           </li>
     

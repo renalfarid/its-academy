@@ -1,5 +1,7 @@
 <script setup>
+  import ListCourse from "../../components/program/ListCourse.vue"
+   
 </script>
 <template>
-    <h1>Halaman kursus</h1>
+    <ListCourse />
 </template>
