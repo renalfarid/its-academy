@@ -1,5 +1,8 @@
 <script setup>
   import CourseDetail from '../../components/program/CourseDetail.vue'
+  useHead({
+  title: 'Course Detail'
+})
   const route = useRoute()
   console.log(route.params) // { id: '123' }
   
@@ -86,13 +89,11 @@ const buyCourse = () => {
         <div class="text-xl font-semibold text-red-500">
           Rp. {{ course.price.toLocaleString() }}
         </div>
+        <div class="mt-10">
+          <NuxtLink :to="`/course/${route.params.id}/order`" class="w-full mt-10 py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600">Beli Kursus</NuxtLink>
+        </div>
+        
   
-        <button
-          class="w-full py-2 px-4 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600"
-          @click="buyCourse"
-        >
-          Beli Kursus
-        </button>
       </div>
     </div>
   </template>
